@@ -6,7 +6,7 @@
 /*   By: ytavares <ytavares@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/10 14:13:51 by ytavares          #+#    #+#             */
-/*   Updated: 2025/01/10 14:55:46 by ytavares         ###   ########.fr       */
+/*   Updated: 2025/01/13 12:37:46 by ytavares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <signal.h>
 # include <unistd.h>
 # include <stdlib.h> 
-# include "libft.h"
+# include "../libft/libft.h"
 
 # define TRUE 1
 # define FALSE 0

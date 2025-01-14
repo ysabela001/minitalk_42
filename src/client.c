@@ -6,7 +6,7 @@
 /*   By: ytavares <ytavares@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 18:40:33 by ytavares          #+#    #+#             */
-/*   Updated: 2025/01/10 19:43:26 by ytavares         ###   ########.fr       */
+/*   Updated: 2025/01/13 12:44:28 by ytavares         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,6 @@ int	main(int argc, char **argv)
 	if (argc == 3)
 	{
 		pid_server = ft_atoi(argv[1]);
-			ft_putstr_fd("ERROR: Invalid PID", 1);
 		sign_client.sa_handler = recive_signal;
 		sign_client.sa_flags = 0;
 		sigemptyset(&sign_client.sa_mask);

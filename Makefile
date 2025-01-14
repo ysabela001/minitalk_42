@@ -24,21 +24,20 @@ all: $(LIBFT) $(NAME_SERVER) $(NAME_CLIENT)
 $(NAME_SERVER): $(OBJS_SERVER) $(LIBFT)
 	$(CC) $(CFLAGS) $(OBJS_SERVER) $(LIBFT) -o $(NAME_SERVER)
 
-#complie client
+#compile client
 $(NAME_CLIENT): $(OBJS_CLIENT) $(LIBFT)
 	$(CC) $(CFLAGS) $(OBJS_CLIENT) $(LIBFT) -o $(NAME_CLIENT)
 
 #compile lib
 $(LIBFT):
 	$(MAKE) -C $(LIBFT_DIR)
-	cp $(LIBFT_DIR)/libft.a .
 
 #clean objects
 clean:
 	rm -f $(OBJS_SERVER) $(OBJS_CLIENT)
 	$(MAKE) -C $(LIBFT_DIR) clean
 
-#clean everthing
+#clean everything
 fclean: clean
 	rm -f $(NAME_SERVER) $(NAME_CLIENT) libft.a
 	$(MAKE) -C $(LIBFT_DIR) fclean
